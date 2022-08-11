@@ -32,8 +32,8 @@ const Form = () => {
       const res = await axios.post(
         "http://202.51.74.168:120/api/users/authenticate",
         {
-          userName: "admin",
-          password: "ImarkLivePOS@101020",
+          userName: "userName",
+          password: "password",
         }
       );
       await AsyncStorage.setItem("isLoggedIn", JSON.stringify(res.data.token));
